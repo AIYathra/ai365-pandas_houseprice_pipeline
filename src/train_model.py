@@ -114,7 +114,9 @@ def evaluate_model(model, X_val: pd.DataFrame, y_val: pd.Series) -> dict:
     r2 = r2_score(y_val, y_pred)
     
     # Root Mean Squared Logarithmic Error (common metric for this competition)
-    rmsle = np.sqrt(mean_squared_error(np.log1p(y_val), np.log1p(y_pred)))
+    # Clip predictions to avoid negative values
+    y_pred_clipped = np.clip(y_pred, 0, None)
+    rmsle = np.sqrt(mean_squared_error(np.log1p(y_val), np.log1p(y_pred_clipped)))
     
     metrics = {
         'RMSE': rmse,
