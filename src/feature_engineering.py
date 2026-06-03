@@ -5,6 +5,8 @@ This module provides functions to create new features and transform existing one
 to improve model performance.
 """
 
+from __future__ import annotations
+
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder

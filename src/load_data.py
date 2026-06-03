@@ -4,6 +4,8 @@ Data loading module for Kaggle House Prices dataset.
 This module provides functions to load the raw House Prices dataset from CSV files.
 """
 
+from __future__ import annotations
+
 import pandas as pd
 import os
 from pathlib import Path
