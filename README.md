@@ -12,6 +12,7 @@ A clean, modular data pipeline using Pandas to transform the Kaggle House Prices
 - [Pipeline Components](#pipeline-components)
 - [Usage Examples](#usage-examples)
 - [Models](#models)
+- [Baseline Results](#-baseline-results)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -230,6 +231,24 @@ All models are evaluated using:
 - **MAE** (Mean Absolute Error): Average prediction error
 - **R²** (R-squared): Proportion of variance explained
 - **RMSLE** (Root Mean Squared Log Error): Kaggle competition metric
+
+## 📊 Baseline Results
+
+Run `python src/train_model.py` (or `notebooks/02_model_training.ipynb`) to generate your baseline validation metrics and replace the placeholders below with your actual values.
+
+| Model | RMSE ($) | MAE ($) | R² Score | RMSLE |
+|-------|----------|---------|----------|-------|
+| Linear Regression | `[fill from run]` | `[fill from run]` | `[fill from run]` | `[fill from run]` |
+| Ridge Regression | `[fill from run]` | `[fill from run]` | `[fill from run]` | `[fill from run]` |
+| Random Forest | `[fill from run]` | `[fill from run]` | `[fill from run]` | `[fill from run]` |
+
+### How to interpret these metrics
+
+- **RMSE**: Typical prediction error in dollars. Lower is better.
+- **R² Score**: How much of the price variation the model explains (closer to 1.0 is better).
+- **RMSLE**: Measures error on a log scale, so relative mistakes on cheaper and expensive homes are balanced (lower is better).
+
+These baseline results are the performance **floor** for future improvements through feature engineering, tuning, and ensembling.
 
 ## 🛠️ Technologies Used
 
