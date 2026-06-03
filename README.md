@@ -245,6 +245,7 @@ Run `python src/train_model.py` (or `notebooks/02_model_training.ipynb`) to gene
 ### How to interpret these metrics
 
 - **RMSE**: Typical prediction error in dollars. Lower is better.
+- **MAE**: Average absolute prediction error in dollars. Lower is better.
 - **R² Score**: How much of the price variation the model explains (closer to 1.0 is better).
 - **RMSLE**: Measures error on a log scale, so relative mistakes on cheaper and expensive homes are balanced (lower is better).
 
