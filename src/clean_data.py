@@ -29,7 +29,7 @@ def handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     numerical_cols = df.select_dtypes(include=[np.number]).columns
     for col in numerical_cols:
         if df[col].isnull().any():
-            df[col].fillna(df[col].median(), inplace=True)
+            df[col] = df[col].fillna(df[col].median())
     
     # Categorical columns - fill with mode or 'None'
     categorical_cols = df.select_dtypes(include=['object']).columns
@@ -39,12 +39,12 @@ def handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
             if col in ['GarageType', 'GarageFinish', 'GarageQual', 'GarageCond',
                       'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2',
                       'PoolQC', 'Fence', 'MiscFeature', 'Alley', 'FireplaceQu']:
-                df[col].fillna('None', inplace=True)
+                df[col] = df[col].fillna('None')
             else:
                 # Fill with mode
                 mode_value = df[col].mode()
                 if len(mode_value) > 0:
-                    df[col].fillna(mode_value[0], inplace=True)
+                    df[col] = df[col].fillna(mode_value[0])
     
     return df
 
