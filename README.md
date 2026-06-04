@@ -1,6 +1,6 @@
 # House Prices Regression Pipeline
 
-A clean, modular data pipeline using Pandas to transform the Kaggle House Prices dataset into an AI-ready, ML-ready format. This project includes data cleaning, exploratory data analysis (EDA), fea[...]
+A clean, modular data pipeline using Pandas to transform the Kaggle House Prices dataset into an AI-ready, ML-ready format. This project includes data cleaning, exploratory data analysis (EDA), feature engineering, and baseline regression models, following best practices for Python data science projects.
 
 ## 📋 Table of Contents
 
@@ -18,7 +18,7 @@ A clean, modular data pipeline using Pandas to transform the Kaggle House Prices
 
 ## 🎯 Overview
 
-This project provides a complete end-to-end pipeline for the [Kaggle House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition[...]
+This project provides a complete end-to-end pipeline for the [Kaggle House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition. The pipeline demonstrates best practices for:
 
 - **Data Loading**: Efficient loading of CSV datasets with proper error handling
 - **Data Cleaning**: Handling missing values, outliers, and data quality issues
@@ -233,8 +233,6 @@ All models are evaluated using:
 - **RMSLE** (Root Mean Squared Log Error): Kaggle competition metric
 
 ## 📊 Baseline Results
-
-Run `python src/train_model.py` (or `notebooks/02_model_training.ipynb`) to generate your baseline validation metrics and replace the placeholders below with your actual values.
 
 | Model | RMSE ($) | MAE ($) | R² Score | RMSLE |
 |-------|----------|---------|----------|-------|
