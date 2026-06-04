@@ -1,6 +1,6 @@
 # House Prices Regression Pipeline
 
-A clean, modular data pipeline using Pandas to transform the Kaggle House Prices dataset into an AI-ready, ML-ready format. This project includes data cleaning, exploratory data analysis (EDA), feature engineering, and baseline regression models, following best practices for Python data science projects.
+A clean, modular data pipeline using Pandas to transform the Kaggle House Prices dataset into an AI-ready, ML-ready format. This project includes data cleaning, exploratory data analysis (EDA), fea[...]
 
 ## 📋 Table of Contents
 
@@ -18,7 +18,7 @@ A clean, modular data pipeline using Pandas to transform the Kaggle House Prices
 
 ## 🎯 Overview
 
-This project provides a complete end-to-end pipeline for the [Kaggle House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition. The pipeline demonstrates best practices for:
+This project provides a complete end-to-end pipeline for the [Kaggle House Prices: Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) competition[...]
 
 - **Data Loading**: Efficient loading of CSV datasets with proper error handling
 - **Data Cleaning**: Handling missing values, outliers, and data quality issues
@@ -238,9 +238,9 @@ Run `python src/train_model.py` (or `notebooks/02_model_training.ipynb`) to gene
 
 | Model | RMSE ($) | MAE ($) | R² Score | RMSLE |
 |-------|----------|---------|----------|-------|
-| Linear Regression | `[fill from run]` | `[fill from run]` | `[fill from run]` | `[fill from run]` |
-| Ridge Regression | `[fill from run]` | `[fill from run]` | `[fill from run]` | `[fill from run]` |
-| Random Forest | `[fill from run]` | `[fill from run]` | `[fill from run]` | `[fill from run]` |
+| Linear Regression | 25349.75 | 17326.79 | 0.8517 | 0.1639 |
+| Ridge Regression | 25335.11 | 17209.71 | 0.8518 | 0.1684 |
+| Random Forest | 26903.19 | 16872.24 | 0.8329 | 0.1409 |
 
 ### How to interpret these metrics
 
